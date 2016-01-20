@@ -1,0 +1,12 @@
+{
+    "refString": "",
+    "mainClasses": [
+        {
+            "class": "FBClass",
+            "isView": false
+        }
+    ],
+    "systemFrameworks": [
+        "FacebookSDK.framework"
+    ]
+}
