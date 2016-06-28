@@ -55,6 +55,11 @@
     [super dealloc];
 }
 
+-(void)setAppID:(NSString*)appId {
+    [FBSession setDefaultAppID:appId];
+    [FBSession setDefaultUrlSchemeSuffix:@"fb"];
+}
+
 -(bool)isSessionActive{
     return FBSession.activeSession.isOpen;
 }

@@ -11,9 +11,9 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
 #ifdef SMARTFACE_PRODUCTION
-#include <iOSPlayer/inc/SMFJSObject.h>
-#include <iOSPlayer/inc/ESpratIOSPlayer.h>
-#include <iOSPlayer/inc/ESpratNavigationController.h>
+#import <iOSPlayer/inc/SMFJSObject.h>
+#import <iOSPlayer/inc/ESpratIOSPlayer.h>
+#import <iOSPlayer/inc/ESpratNavigationController.h>
 #else
 #import "SMFJSObject.h"
 #import "ESpratIOSPlayer.h"
@@ -24,6 +24,8 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 @interface FBClass : NSObject <FBFriendPickerDelegate>
+
+-(void)setAppID:(NSString*)appId;
 
 -(bool)isSessionActive;
 
